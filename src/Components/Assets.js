@@ -167,10 +167,60 @@ const songsData = [
         "url": "https://ia801300.us.archive.org/11/items/travi-scott-rodeo/Flying%20High%20%28feat.%20Toro%20y%20Moi%29.mp3",
         "duration" : "3:28"
     }
-    
     ,
     {
         "id": 11,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:16:38.957Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:23:26.359Z",
+        "name": "Tell Your Friends",
+        "artist": "The Weeknd",
+        "accent": "linear-gradient(to right top, #121011, #201f1f, #2f2d2d, #3e3c3c, #4e4c4b, #504e4d, #52504e, #545250, #494744, #3f3c39, #34312e, #2a2723)",
+        "cover": "https://ia802203.us.archive.org/23/items/the-weeknd-tell-your-friends-remix-ft.-drake-kanye-west/tell%20your%20friends%20remix.jpg",
+        "top_track": true,
+        "url": "https://ia802203.us.archive.org/23/items/the-weeknd-tell-your-friends-remix-ft.-drake-kanye-west/The%20Weeknd-Tell%20Your%20Friends%20%28Remix%29%20%28Ft.%20Drake%20%26%20Kanye%20West%29.mp3",
+        "duration" : "7:56"
+    }
+    ,
+    {
+        "id": 12,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:16:38.957Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:23:26.359Z",
+        "name": "Echoes Of Silence",
+        "artist": "The Weeknd",
+        "accent": "linear-gradient(to right top, #900d08, #961c15, #9b2821, #a0322c, #a43c37, #a6433d, #a94942, #ab4f48, #ac534a, #ad574c, #ae5b4f, #af5f51)",
+        "cover": "https://ia904605.us.archive.org/5/items/the-weeknd-echoes-of-silence/Echoes%20Of%20Silence/cover.jpg",
+        "top_track": true,
+        "url": "https://ia804605.us.archive.org/5/items/the-weeknd-echoes-of-silence/Echoes%20Of%20Silence/09-Echoes%20Of%20Silence%20%28Original%29.mp3",
+        "duration" : "4:00"
+    }
+    ,
+    {
+        "id": 13,
+        "status": "published",
+        "sort": null,
+        "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_created": "2023-08-10T06:16:38.957Z",
+        "user_updated": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
+        "date_updated": "2023-08-10T07:23:26.359Z",
+        "name": "Save Your tears",
+        "artist": "The Weeknd",
+        "accent": "linear-gradient(to right top, #444528, #514921, #604b1a, #724c15, #864a16, #8e561d, #966225, #9d6e2e, #988849, #969f6c, #9cb392, #acc5b5)",
+        "cover": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36",
+        "top_track": true,
+        "url": "https://ia601805.us.archive.org/25/items/MTV-LA-the-weeknd-save-your-tears-2021-02-06-00-58-59-544/vlc%202021-02-06%2000-58-59-544%28AVIVIDEO_MXUHD%29.mp4",
+        "duration" : "4:04"
+    }
+    ,
+    {
+        "id": 14,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -185,8 +235,9 @@ const songsData = [
         "url": "https://dn720309.ca.archive.org/0/items/drake-bad-karma-ft.-bryson-tiller/Drake-Bad%20Karma%20%28Ft.%20Bryson%20Tiller%29.mp3",
         "duration" : "2:58"
     }
-    ,{
-        "id": 12,
+    ,
+    {
+        "id": 15,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -202,7 +253,7 @@ const songsData = [
         "duration" : "3:17"
     },
     {
-        "id": 13,
+        "id": 16,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -218,7 +269,7 @@ const songsData = [
         "duration" : "2:20"
     },
     {
-        "id": 14,
+        "id": 17,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -234,7 +285,7 @@ const songsData = [
         "duration" : "3:17"
     },
     {
-        "id": 15,
+        "id": 18,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -250,7 +301,7 @@ const songsData = [
         "duration" : "1:54"
     },
     {
-        "id": 16,
+        "id": 19,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -266,7 +317,7 @@ const songsData = [
         "duration" : "0:55"
     },
     {
-        "id": 17,
+        "id": 20,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -282,7 +333,7 @@ const songsData = [
         "duration" : "2:17"
     },
     {
-        "id": 18,
+        "id": 21,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -296,9 +347,10 @@ const songsData = [
         "top_track": true,
         "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/phoenix-97462.mp3",
         "duration" : "2:20"
-    },
+    }
+    ,
     {
-        "id": 19,
+        "id": 22,
         "status": "published",
         "sort": null,
         "user_created": "2085be13-8079-40a6-8a39-c3b9180f9a0a",
@@ -313,8 +365,6 @@ const songsData = [
         "url": "https://pub-172b4845a7e24a16956308706aaf24c2.r2.dev/great-is-thy-faithfulness-9449.mp3",
         "duration" : "2:58"
     }
-    
-    
 ]
 
 export  {songsData} ;
