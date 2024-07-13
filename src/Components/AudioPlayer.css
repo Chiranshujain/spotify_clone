@@ -1,0 +1,1009 @@
+.audioPlayer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    color: white;
+}
+
+.sidebar {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+}
+
+.logo {
+    position: relative;
+    top: 1.08vw;
+    left: 1.08vw;
+    width: 8.72vw;
+    height: 2.60vw;
+}
+
+.profile {
+    position: relative;
+    top: 45vw;
+    left: 1.08vw;
+    width: 3.125vw;
+    height: 3.125vw;
+    border-radius: 6.51vw;
+    background-color: aliceblue;
+}
+
+.profile img {
+    border-radius: 6.51vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audiolist {
+    position: absolute;
+    left: 15%;
+    width: 35%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.audiolist::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.listcontainer {
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: auto;
+    position: absolute;
+}
+
+.headings {
+    display: flex;
+    gap: 2vw;
+    font-size: 1.2vw;
+    line-height: 1vw;
+    font-weight: 600;
+}
+
+.headings h2:nth-child(2) {
+    opacity: 50%;
+}
+
+.searchbar {
+    width: 100%;
+    height: 2.5vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar input {
+    width: 85%;
+    height: 100%;
+    font-size: 1.2vw;
+    outline: none;
+    border: none;
+    border-radius: 0.651vw;
+    opacity: 50%;
+}
+
+.searchbar i {
+    left: 75%;
+    color: white;
+    position: absolute;
+    font-size: 1.6vw;
+    opacity: 50%;
+}
+
+.tracks {
+    position: absolute;
+    top: 6vw;
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.trackcard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: 3.5vw;
+    top: 0%;
+    letter-spacing: 0.05vw;
+    border-radius: 0.651vw;
+    padding: 15px;
+}
+
+.trackcard:hover {
+    background-color: rgba(225, 225, 225, .1);
+}
+
+.trackcard .trackprofile {
+    position: relative;
+    width: 3.125vw;
+    height: 3.125vw;
+    border-radius: 100px;
+}
+
+.trackcard .trackprofile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6.51vw;
+    object-fit: cover;
+}
+
+.trackdetail {
+    position: absolute;
+    left: 20%;
+    width: auto;
+    height: 3.25vw;
+    overflow: hidden;
+    color: white;
+    transform: translate(0%, -10%);
+}
+
+.trackcard .trackdetail .trackname p {
+    font-size: 1.2vw;
+    line-height: 0;
+    font-weight: 500;
+
+}
+
+.trackcard .trackdetail .artist p {
+    font-size: 0.8vw;
+    line-height: 1;
+    font-weight: 300;
+    opacity: 50%;
+}
+
+.trackcard .trackduration {
+    align-items: center;
+    left: 90%;
+    width: auto;
+    height: auto;
+}
+
+.trackcard .trackduration p {
+    opacity: 50%;
+    font-size: 0.9vw;
+    color: white;
+}
+
+.player {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    left: 50%;
+}
+
+.player-content {
+    position: relative;
+    top: 18%;
+    left: 5%;
+    width: 27vw;
+    height: 35.117vw;
+}
+
+.songinfo {
+    top: auto;
+    width: 100%;
+    height: 4.427vw;
+}
+
+.songinfo h1 {
+    font-size: 2.083vw;
+    font-weight: 700;
+    line-height: 0.7;
+}
+
+.songinfo p {
+    line-height: 0;
+    opacity: 60%;
+    font-size: 1.302vw;
+    font-weight: 400;
+}
+
+.cover-controler {
+    position: absolute;
+    top: 11%;
+    left: 0%;
+    width: 27vw;
+    height: 31.427vw;
+}
+
+.cover-controler img {
+    object-fit: cover;
+    width: 27vw;
+    height: 27vw;
+    max-width: 27vw;
+    min-height: 27vw;
+}
+
+.rhap_container {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0%;
+}
+
+/* Override the play button */
+.rhap_button-clear {
+    color: white;
+}
+
+/* Override the progress bar */
+.rhap_progress-bar {
+    background-color: white;
+}
+
+.rhap_progress-filled {
+    background-color: white;
+}
+
+.rhap_current-time {
+    color: white;
+}
+
+/* Override the volume controls */
+.rhap_volume-bar {
+    width: 5vw;
+    background-color: white;
+}
+
+.rhap_volume-indicator {
+    background-color: white;
+}
+
+.rhap_total-time {
+    color: white;
+}
+
+
+@media only screen and (max-width: 426px) {
+    .audioPlayer {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        display: flex;
+    }
+
+    .logo {
+        position: fixed;
+        top: 3vw;
+        left: 2vw;
+        width: 38.88vw;
+        height: 10.4vw;
+    }
+
+    .profile {
+        width: 10vw;
+        height: 10vw;
+        top: 3vw;
+        left: 87%;
+        background-color: black;
+    }
+
+    .profile img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .audiolist {
+        top: 10%;
+        left: 0%;
+        width: 100%;
+        height: 75%;
+    }
+
+    .listcontainer {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+
+    .headings {
+        display: flex;
+        font-size: 3.5vw;
+        line-height: 1vw;
+        gap: 3vw;
+        padding-left: 4.5vw;
+        align-items: center;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .tracks {
+        position: relative;
+        top: 2.604vw;
+        left: 2%;
+        width: 95%;
+        height: auto;
+    }
+
+    .trackcard {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 95%;
+        height: 12.208vw;
+        top: 0%;
+        border-radius: 5vw;
+        letter-spacing: 0vw;
+    }
+
+    .trackcard .trackprofile {
+        position: relative;
+        width: 13vw;
+        height: 13vw;
+        border-radius: 100px;
+    }
+
+    .trackcard .trackdetail {
+        position: absolute;
+        left: 23%;
+        width: auto;
+        height: 12vw;
+        overflow: hidden;
+        color: white;
+        letter-spacing: .1vw;
+    }
+
+    .trackcard .trackdetail .trackname p {
+        font-size: 4vw;
+        line-height: 0;
+        font-weight: 500;
+
+    }
+
+    .trackcard .trackdetail .artist p {
+        font-size: 3.5vw;
+        font-weight: 300;
+        opacity: 50%;
+    }
+
+    .trackduration {
+        align-items: center;
+        left: 80%;
+        width: auto;
+        height: auto;
+        line-height: 0;
+    }
+
+    .trackcard .trackduration p {
+        opacity: 50%;
+        font-size: 4vw;
+        color: white;
+    }
+
+    .player {
+        top: 85%;
+        left: 0%;
+        width: 100%;
+        height: 15%;
+    }
+
+    .player-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
+
+    .songinfo {
+        position: relative;
+        top: 0%;
+        left: 27%;
+        width: auto;
+        height: 40%;
+    }
+
+    .songinfo h1 {
+        font-size: 5vw;
+        line-height: 0%;
+    }
+
+    .songinfo p {
+        font-size: 4.5vw;
+        line-height: 1.5vw;
+    }
+
+    .center {
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        width: 100%;
+        height: 90%;
+    }
+
+    .cover-controler {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cover-controler img {
+        top: 5%;
+        left: 1%;
+        width: 23%;
+        height: 80%;
+    }
+
+    .rhap_container {
+        transform: translate(-23%, 170%);
+        width: 60vw;
+        height: 10vw;
+        border: none;
+        outline: none;
+    }
+
+    .rhap_button-clear {
+        font-size: 9vw;
+        transform: translate(-240%, -110%);
+    }
+
+    .rhap_progress-bar {
+        transform: translate(20%, -160%);
+        width: 45vw;
+    }
+
+    .rhap_total-time {
+        transform: translate(80%, -80%);
+        font-size: 4vw;
+        color: white;
+    }
+
+    .rhap_volume-bar {
+        display: none;
+    }
+
+    .rhap_volume-indicator {
+        display: none;
+    }
+
+    .rhap_repeat-button {
+        display: none;
+    }
+
+    .rhap_skip-button {
+        display: none;
+    }
+
+    .rhap_current-time {
+        display: none;
+    }
+
+    .rhap_volume-button {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 830px) {
+    .sidebar {
+        left: 0%;
+        width: 100vw;
+        height: 10%;
+        position: fixed;
+        display: flex;
+    }
+
+    .logo {
+        position: fixed;
+        top: 2vw;
+        left: 1vw;
+        width: 23.5vw;
+        height: 6.9vw;
+    }
+
+    .logo img {
+        width: 23.5vw;
+        height: 6.9vw;
+    }
+
+    .profile {
+        width: 5.5vw;
+        height: 5.5vw;
+        top: 2vw;
+        left: 93%;
+    }
+
+    .profile img {
+        width: 5.5vw;
+        height: 5.5vw;
+        object-fit: cover;
+    }
+
+    .audiolist {
+        top: 10%;
+        left: 0%;
+        width: 50%;
+        height: 75%;
+        position: relative;
+    }
+
+    .headings {
+        font-size: 2vw;
+        line-height: 1vw;
+        gap: 3vw;
+        padding-left: 1vw;
+        align-items: center;
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 5.125vw;
+        border-radius: 1vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .searchbar input {
+        width: 90%;
+        height: 100%;
+        font-size: 1.67vw;
+        outline: none;
+        border: none;
+        border-radius: 0.651vw;
+        opacity: 50%;
+    }
+
+    .searchbar i {
+        left: 85%;
+        color: white;
+        position: absolute;
+        font-size: 2vw;
+        opacity: 50%;
+    }
+
+    .tracks {
+        position: relative;
+        top: 1.5%;
+        width: 90%;
+        height: auto;
+    }
+
+    .trackcard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 4.5vw;
+        top: 0%;
+        border-radius: 0.651vw;
+        padding: 16px;
+    }
+
+    .trackcard .trackprofile {
+        position: relative;
+        width: 5.125vw;
+        height: 5.125vw;
+        border-radius: 100px;
+    }
+
+    .trackcard .trackprofile img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6.51vw;
+        object-fit: cover;
+    }
+
+    .trackcard .trackdetail {
+        position: absolute;
+        left: 25%;
+        width: auto;
+        height: 5.125vw;
+        overflow: hidden;
+        color: white;
+        transform: translate(0%, 0%);
+    }
+
+    .trackcard .trackdetail .trackname p {
+        font-size: 1.5vw;
+        line-height: 0;
+        font-weight: 500;
+
+    }
+
+    .trackcard .trackdetail .artist p {
+        font-size: 1.3vw;
+        line-height: 1;
+        font-weight: 300;
+        opacity: 50%;
+    }
+
+    .trackcard .trackduration {
+        align-items: center;
+        left: 90%;
+        width: auto;
+        height: auto;
+        line-height: 0;
+    }
+
+    .trackcard .trackduration p {
+        opacity: 50%;
+        font-size: 1.4vw;
+        color: white;
+    }
+
+    .player {
+        top: 10%;
+        left: 50%;
+        width: 50%;
+        height: 75%;
+    }
+
+    .player-content {
+        position: absolute;
+        top: 19%;
+        left: 5%;
+        width: 89%;
+        height: 50%;
+    }
+
+    .songinfo h1{
+        font-size: 3.5vw;
+    }
+    .songinfo p{
+        font-size: 3vw;
+    }
+
+
+    .cover-controler{
+        top: 19%;
+        width: 35vw;
+        height: 35.427vw;
+    }
+
+    .cover-controler img {
+        object-fit: cover;
+        width: 35vw;
+        height: 35vw;
+        max-width: 35vw;
+        min-height: 30vw;
+    }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1050px) {
+    .sidebar {
+        left: 0;
+        width: 15%;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .logo {
+        position: relative;
+        top: 1.08vw;
+        left: 1.08vw;
+        width: 8.72vw;
+        height: 2.60vw;
+    }
+    
+    .profile {
+        position: relative;
+        top: 72vw;
+        left: 1.08vw;
+        width: 3.125vw;
+        height: 3.125vw;
+        border-radius: 6.51vw;
+        background-color: aliceblue;
+    }
+    
+    .profile img {
+        border-radius: 6.51vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .audiolist {
+        overflow-x: hidden;
+        width: 40%;
+        height: 100vh;
+        left: 15%;
+        position: absolute;
+    }
+    
+    .main2content {
+        width: 80%;
+        height: 100%;
+        top: 5%;
+        left: 5%;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .headings {
+        display: flex;
+        gap: 2vw;
+        font-size: 1.2vw;
+        line-height: 1vw;
+        font-weight: 600;
+    }
+    
+    .headings h2:nth-child(2) {
+        opacity: 50%;
+    }
+    
+    .searchbar {
+        width: 100%;
+        height: 3.5vw;
+        border-radius: 1vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .searchbar input {
+        width: 80%;
+        height: 100%;
+        font-size: 1.4vw;
+        outline: none;
+        border: none;
+        border-radius: 0.651vw;
+        opacity: 50%;
+    }
+    
+    .searchbar i {
+        left: 75%;
+        color: white;
+        position: absolute;
+        font-size: 1.6vw;
+        opacity: 50%;
+    }
+    
+    .tracks {
+        position: absolute;
+        top: 9vw;
+        width: 84%;
+        height: auto;
+    }
+
+    .trackcard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 4vw;
+        top: 0%;
+        border-radius: 0.651vw;
+        letter-spacing: 0vw;
+        padding: 15px;
+    }
+
+    .trackcard .trackprofile {
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100px;
+    }
+
+    .trackcard .trackprofile img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6.51vw;
+        object-fit: cover;
+    }
+
+    .trackcard .trackdetail {
+        position: absolute;
+        left: 25%;
+        width: auto;
+        height: 5.125vw;
+        overflow: hidden;
+        color: white;
+        transform: translate(0%, 0%);
+    }
+
+    .trackcard .trackdetail .trackname p {
+        font-size: 1.5vw;
+        line-height: 0;
+        font-weight: 500;
+
+    }
+
+    .trackcard .trackdetail .artist p {
+        font-size: 1.3vw;
+        line-height: 1;
+        font-weight: 300;
+        opacity: 50%;
+    }
+
+    .trackcard .trackduration {
+        align-items: center;
+        left: 90%;
+        width: auto;
+        height: auto;
+        line-height: 0;
+    }
+
+    .trackcard .trackduration p {
+        opacity: 50%;
+        font-size: 1.4vw;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1200px) {
+    sidebar {
+        left: 0;
+        width: 15%;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .logo {
+        position: relative;
+        top: 1.08vw;
+        left: 1.08vw;
+        width: 8.72vw;
+        height: 2.60vw;
+    }
+    
+    .profile {
+        position: relative;
+        top: 56vw;
+        left: 1.08vw;
+        width: 3.125vw;
+        height: 3.125vw;
+        border-radius: 6.51vw;
+        background-color: aliceblue;
+    }
+    
+    .profile img {
+        border-radius: 6.51vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .audiolist {
+        overflow-x: hidden;
+        width: 40%;
+        height: 100vh;
+        left: 15%;
+        position: absolute;
+    }
+    
+    .main2content {
+        width: 80%;
+        height: 100%;
+        top: 5%;
+        left: 5%;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .headings {
+        display: flex;
+        gap: 2vw;
+        font-size: 1.2vw;
+        line-height: 1vw;
+        font-weight: 600;
+    }
+    
+    .headings h2:nth-child(2) {
+        opacity: 50%;
+    }
+    
+    .searchbar {
+        width: 100%;
+        height: 3.5vw;
+        border-radius: 1vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .searchbar input {
+        width: 80%;
+        height: 100%;
+        font-size: 1.4vw;
+        outline: none;
+        border: none;
+        border-radius: 0.651vw;
+        opacity: 50%;
+    }
+    
+    .searchbar i {
+        left: 75%;
+        color: white;
+        position: absolute;
+        font-size: 1.6vw;
+        opacity: 50%;
+    }
+    
+    .tracks {
+        position: absolute;
+        top: 9vw;
+        width: 84%;
+        height: auto;
+    }
+
+    .trackcard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 4vw;
+        top: 0%;
+        border-radius: 0.651vw;
+        letter-spacing: 0vw;
+        padding: 15px;
+    }
+
+    .trackcard .trackprofile {
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100px;
+    }
+
+    .trackcard .trackprofile img {
+        height: 100%;
+        width: 100%;
+        border-radius: 6.51vw;
+        object-fit: cover;
+    }
+
+    .trackcard .trackdetail {
+        position: absolute;
+        left: 25%;
+        width: auto;
+        height: 5.125vw;
+        overflow: hidden;
+        color: white;
+        transform: translate(0%, 0%);
+    }
+
+    .trackcard .trackdetail .trackname p {
+        font-size: 1.5vw;
+        line-height: 0;
+        font-weight: 500;
+
+    }
+
+    .trackcard .trackdetail .artist p {
+        font-size: 1.3vw;
+        line-height: 1;
+        font-weight: 300;
+        opacity: 50%;
+    }
+
+    .trackcard .trackduration {
+        align-items: center;
+        left: 90%;
+        width: auto;
+        height: auto;
+        line-height: 0;
+    }
+
+    .trackcard .trackduration p {
+        opacity: 50%;
+        font-size: 1.4vw;
+        color: white;
+    }
+}
